@@ -10,6 +10,9 @@ html {
     height: 70px;
     width: 100%;
 }
+.navSpan {
+	color: #086E9F;
+}
 .outerContainer {
     position: relative;
     min-height: 100%;
