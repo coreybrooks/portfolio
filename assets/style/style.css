@@ -59,6 +59,10 @@ p {
 img {
 	border: 1px solid white;
 }
+.photo {
+	width: 66px;
+	margin: 1px 10px 0 0;
+}
 .overview {
 	width: 550px;
 	margin: auto;
