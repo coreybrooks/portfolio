@@ -9,10 +9,26 @@ html {
 .outerContainer {
     position: relative;
     min-height: 100%;
-    padding-bottom: 180px;
+    padding-bottom: 100px;    
+}
+.outerAboutContainer {
+	background-image: url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg);
+	padding: 40px;
+	border-radius: 10px;
+}
+.aboutContainer {
+	padding: 20px;
+	outline: 5px groove #EBEBEB;
+    outline-offset: 12px;
+	border-radius: 10px;
+	background-color: black;
+	width: 100%;
+	max-width: 600px;
+	margin: auto;
 }
 .navbar {
     height: 70px;
+    width: 100%;
 }
 .title {
 	text-align: center;
@@ -34,6 +50,7 @@ html {
 p {
 	background-image: url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg); 
 	opacity: 0.8;
+	text-align: justify;
 	color: white;
 	padding: 10px;
 	border: 1px solid white;
@@ -52,7 +69,6 @@ img {
     width: 100%;
 	padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 20px;
     margin-bottom: 0px;
 }
 .social li {
