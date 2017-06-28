@@ -9,15 +9,37 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://bootswatch.com/cyborg/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/style/style.css" type="text/css" />
 </head>
 
 <body>
-  <h1 class="title">Corey's Portfolio</h1>
-  <h5 class="title">Click on a project to visit the page</h5>
-  <div class="container">
-    <br>
+  <div class="outerContainer">
+    <!-- header -->
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><h4 class="title2">Corey Brooks</h4></a>
+        </div>
+        <ul class="nav navbar-nav collapse navbar-collapse">
+          <li><a href="./index.html" class="title2">Portfolio</a></li>
+          <li><a href="https://drive.google.com/file/d/0BwF5_EXUNYFmQzRnRHVCaDl0LU0/view" class="title2">Resume</a></li>
+          <li><a href="./indexAbout.html" class="title2">About Me</a></li>
+        </ul>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <ul class="social">
+              <li><a href="https://github.com/coreybrooks"><i class=" fa fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/corey-brooks"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <h3 class="title2">Click on a project to visit the page</h3>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -25,38 +47,80 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
 
         <div class="item active">
-          <h3>React Reddit Project</h3>
-          <a href="https://coreys-reddit-react-project.herokuapp.com/#/">
+          <h3 class="title">React Reddit Project</h3>
+          <a href="https://coreys-reddit-react-project.herokuapp.com/">
             <img src="./assets/images/reddit-react.jpg" alt="react-reddit">
           </a>
           <br> 
-          <p>Overview:  This is a Reddit style application that allows users to make posts about topics of their choosing.  Users can also create new categories and leave comments about existing posts. This is a full MERN Stack application.</p>
+          <p class="overview">This is a Reddit style application that allows users to make posts about topics of their choosing.  Users can also create new categories and leave comments about existing posts. This is a full MERN Stack application.</p>
         </div>
 
         <div class="item">
-          <h3>Texas Beer Wars</h3>
-          <img src="./assets/images/texas-beer-wars.jpg" alt="texas-beer-wars"><br>
-          <p>Overview:  Texas Beer Wars is a full stack interactive web application. This app is designed to allow users to vote on their favorite beer in a battle to find the best native Texan beer.  This project was built using an MVC structure. The backend of this application incorporates Node.js and Express to route both get and post requests.  Mocha and Chai are used as a framework to test the Node.JS RESTful functionality.  The app data is stored in MySQL and JawsDB using a Sequelize ORM.</p>
+          <h3 class="title">Texas Beer Wars</h3>
+          <a href="https://texas-beer-wars.herokuapp.com/">
+            <img src="./assets/images/texas-beer-wars.jpg" alt="texas-beer-wars"><br>
+          </a>
+          <p class="overview">Texas Beer Wars is a full stack interactive web application. This app is designed to allow users to vote on their favorite beer in a battle to find the best native Texan beer.  This project was built using an MVC structure. The backend of this application incorporates Node.js and Express to route both get and post requests.  Mocha and Chai are used as a framework to test the Node.JS RESTful functionality.  The app data is stored in MySQL and JawsDB using a Sequelize ORM.</p>
         </div>
     
         <div class="item">
-          <h3>Flowers</h3>
-          <img src="./assets/images/lorem3.jpg" alt="lorem3"><br>
-          <p>Beautiful flowers in Kolymbari, Crete.</p>
+          <h3 class="title">NYT React Search</h3>
+          <a href="https://coreys-nyt-api-react.herokuapp.com/">
+            <img src="./assets/images/NYT-react-searcher.jpg" alt="NYT-react-searcher"><br>
+          </a>
+          <p class="overview">This is a full stack application that utilizes the complete MERN Stack.  AJAX requests through Axios are used to query the NYT API for news articles related to the search term within the specified beginning and ending years.  The React components are then rendered to display the search results and the articles saved by the user for later viewing.</p>
         </div>
   
         <div class="item">
-          <h3>Flowers</h3>
-          <img src="./assets/images/lorem4.jpg" alt="lorem4"><br>
-          <p>Beautiful flowers in Kolymbari, Crete.</p>
+          <h3 class="title">Cheerio News Scraper</h3>
+          <a href="https://corey-news-scraper.herokuapp.com/articles">
+            <img src="./assets/images/news-scraper.jpg" alt="news-scraper"><br>
+          </a>
+          <p class="overview">This application is a full stack website that utilizes Node.js, Express, MongoDB, Mongoose, Handlebars.js and Cheerio.  Node.js and Express are used to query and route data into the app and display the appropriate pages.  Cheerio is used to scrape the news data from Rawstory, and the data is stored in MongoDB using Mongoose.  The front-end HTML is displayed using Handlebars.js.  Users can both leave and delete comments for each article.</p>
         </div>
-  
+
+        <div class="item">
+          <h3 class="title">Friend Finder</h3>
+          <a href="https://corey-friend-finder.herokuapp.com/">
+            <img src="./assets/images/friend-finder.jpg" alt="friend-finder"><br>
+          </a>
+          <p class="overview">Friend Finder is similar to a dating app.  This is a full stack Restful API website which sets the HTML and API routes for posting and requesting data through Express and Node.JS.</p>
+        </div>
+
+        <div class="item">
+          <h3 class="title">Giphy API</h3>
+          <a href="https://coreys-giphy-app.herokuapp.com/">
+            <img src="./assets/images/giphy-api.jpg" alt="giphy-api"><br>
+          </a>
+          <p class="overview">Giphy API is a front end application that utilizes JavaScript, jQuery and AJAX to query GIPHY API to search for GIFs. GIPHY API is a website with a large library of GIFs that can be queried through a REST-like interface accessible through any HTTP enabled programming language.</p>
+        </div>
+
+        <div class="item">
+          <h3 class="title">Hangman Game</h3>
+          <a href="https://corey-hangman-game.herokuapp.com/">
+            <img src="./assets/images/hangman-game.jpg" alt="hangman-game"><br>
+          </a>
+          <p class="overview">Hangman is a rendition of the classic game hangman with a movie title theme. This application was created with Vanilla JS and is not mobile responsive. This game must be played on a system that includes a keyboard.</p>
+        </div>
+
+        <div class="item">
+          <h3 class="title">Sequelized Burger Logger</h3>
+          <a href="https://corey-burger-logger.herokuapp.com/">
+            <img src="./assets/images/burger-logger.jpg" alt="burger-logger"><br>
+          </a>
+          <p class="overview">This application is a full stack MVC "burger logger" that utilizes MySQL, Sequelize, Node.JS, Express and Handlebars.JS.  Node.JS, MySQL, and Sequelize are used to query and route data into the app, and Handlebars.JS is used to generate the HTML.</p>
+        </div>
+
       </div>
 
       <!-- Left and right controls -->
@@ -69,6 +133,15 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer navbar navbar-default">
+      <div class="container-fluid">
+        <p class="text-center"> Copyright © 2017 Corey Brooks</p>
+      </div>
+    </div>
+
   </div> 
 
   <script type="text/javascript" src="./assets/javascript/javascript.js"></script> 
