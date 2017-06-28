@@ -6,6 +6,10 @@ body {
 html {
     height:100%;
 }
+.navbar {
+    height: 70px;
+    width: 100%;
+}
 .outerContainer {
     position: relative;
     min-height: 100%;
@@ -26,9 +30,17 @@ html {
 	max-width: 600px;
 	margin: auto;
 }
-.navbar {
-    height: 70px;
-    width: 100%;
+.resumeContainer {
+	width: 80%;
+	margin: auto;
+}
+.resume {
+	width: 100%;
+	height: 100%;
+	min-height: 1130px;
+}
+.profileParagraph {
+	font-size: 20px;
 }
 .title {
 	text-align: center;
@@ -55,6 +67,9 @@ p {
 	padding: 10px;
 	border: 1px solid white;
 	border-radius: 10px;
+}
+.noHover:hover {
+    text-decoration: none;
 }
 img {
 	border: 1px solid white;
