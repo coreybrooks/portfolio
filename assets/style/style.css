@@ -2,12 +2,10 @@ body {
 	box-sizing: border-box;
     height: 100%;
     font-family: 'Spectral', serif;
+    padding: 3px;
 }
 html {
     height:100%;
-}
-.navbar {
-    height: 70px;
 }
 .navSpan {
 	color: #086E9F;
@@ -69,6 +67,8 @@ p {
 	padding: 10px;
 	border: 1px solid white;
 	border-radius: 10px;
+	max-width: 95%;
+	margin: auto;
 }
 .noHover:hover {
     text-decoration: none;
@@ -131,4 +131,18 @@ img {
 	font-size: 16px;
 	margin: 0 0 0 5px;
 	color: #EDEFF1 !important;
+}
+@media screen and (max-width: 780px) {
+	.carousel-inner > .item > img,
+    .carousel-inner > .item > a> img {
+	  width: 90%;
+      margin: auto;
+   }
+}
+
+@media screen and (max-width: 640px) {
+   #myCarousel {
+   	height: 600px;
+   }
+
 }
