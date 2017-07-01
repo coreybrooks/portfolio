@@ -69,6 +69,7 @@ p {
 	border-radius: 10px;
 	max-width: 95%;
 	margin: auto;
+	margin-bottom: 10px;
 }
 .noHover:hover {
     text-decoration: none;
@@ -143,6 +144,12 @@ img {
 @media screen and (max-width: 640px) {
    #myCarousel {
    	height: 600px;
-   }
+   	}
+   	.outerAboutContainer {
+   		padding: 5px;
+   	}
+   	.aboutContainer {
+   		padding: 5px;
+   	}
 
 }
