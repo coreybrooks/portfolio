@@ -344,13 +344,12 @@
                                 <a href="https://corey-inventory-app.herokuapp.com/#/"><img class="img-responsive img-centered" src="img/portfolio/kanban-inventory.jpg" alt=""></a>
                                 <h3>Why the Need?</h3>
 
-                                <br><em style="color: yellow;background: black">UNDER CONSTRUCTION</em>
                                 <br><p style="text-align: justify">Companies with massive inventory requirements already use barcoding inventory systems, and large warehouses can use RFID tags. However, many large companies, such as restaurant chains, conduct daily pen-and-paper inventory counts on every product.  If every location had the same layout, creating a master inventory checklist would be easy. However, some restaurant chains lease or buy existing buildings with varying space and layout.  
                                 <br><br>From a process engineering standpoint, any small inefficiency in conducting an inventory count accumulates, and over time, can translate to a significant portion of the labor margin.  There are other inefficiencies with the pen-and-paper inventory methodology as summarized below
-                                <br><br>Employees conduct inventory counts in one of a few different ways:
+                                <br><br><strong>Employees conduct inventory counts in one of a few different ways:</strong>
                                   <ol style="text-align: justify">
                                     <li><strong>Begin observing items in one location, and search for each item on the checklist to mark the count.  Then attempt to count every item before moving to the next location.</strong> The problem with this method is that items are typically listed alphabetically.  This would only take a few seconds if the items were listed exactly as expected on a single page, but there can be a learning curve with the item names. For example, trash bags might be listed as "liner, trash 50 gal".  Also, the actual items are typically located in more than one area, and checklists are usually longer than one page.</li>
-                                    <br><li><strong>Move to one location and scan the checklist to find all items, then move to the next location.</strong> This method might save some time because the employee conducting the inventory is typically much more familiar with the location of the actual items, than the location of the items on the checklist. The problem with this method is that it still takes time to scan the checklist for each item, and it is easy to miss items which causes the employee to move back and forth between locations.</li>
+                                    <br><li><strong>Move to one location and scan the checklist to find all items, then move to the next location.</strong> This method might save some time because the employee is typically much more familiar with the location of the actual item, than the location of the item on the checklist. The problem with this method is that it still takes time to scan the checklist for each item, and it is easy to miss items which causes the employee to move back and forth between locations.</li>
                                     <br><li>Some companies attempt to <strong>segment group items by location</strong> which is a better method. The problem with this method is that most locations are not the same. Even if every location made a unique segmented checklist specific to their location layout, most items are located in more than one place which causes the employee to sum the items together from multiple places on the checklist once completed.</li>
                                     <br><br><em>** In addition, all three methods require calculations after the count is complete.  Even the most advanced systems require data entry to calculate orders and compile data tracking. Less sophisticated systems still require the employee to manually add items from multiple locations.</em>
                                   </ol>
@@ -358,7 +357,7 @@
                                 <h6 style="text-align: justify;">Common sense would suggest that the following would be the absolute optimal way to do an inventory check:</h6> 
                                   <ul style="text-align: justify">
                                     <li>Make only one trip around the store, stopping at each location only once</li>   
-                                    <li>Don't waste any time searching for items, and instantly know where to find items on the checklist</li>
+                                    <li>Don't waste any time counting items, and instantly know where to find items on the checklist</li>
                                     <li>Have a system that automatically sums the count</li>
                                     <li>Have a system that automatically enters the data into the tracking system</li>
                                     <li>Have a system that automatically places the order</li>
@@ -395,16 +394,16 @@
                                     <li>Once all forms positions are filled, or all colors have changed to gray, submit the inventory and create a PDF of the results if desired</li>  
                                   </ol><br><br>
 
-                                <h2>Overview of code</h2> 
-                                <h3>Routing</h3>
-                                <h4 style="text-align: justify;">Express Routes</h4>
+                                <hr><h2>Overview of code</h2> 
+                                <h3 style="text-align: justify">Routing:</h3>
+                                <br><h4 style="text-align: justify">Express Routes</h4>
                                 <p style="text-align: justify">The following requests are routed with Express and Node.js. They are called using Axios:<br>
                                 <ul style="text-align: justify">
-                                  <li>”/api/signup” and "api/login" POST routes area used to authenticate the user</li>
+                                  <li>”/api/signup” and "api/login" POST routes are used to authenticate the user</li>
                                   <li>"/api/area" POST route for creating a new inventory area</li>
                                   <li>”/api/area/:companyName” GET route is used to retrieve inventory areas from MySQL per company</li>
                                   <li>"/api/areaColor/:companyName/:area" GET route is used to retrieve inventory area colors from MySQL per company</li>
-                                  <li>"/api/table/:companyName/:date" GET route for retrieving inventory per data from MySQL per company</li>
+                                  <li>"/api/table/:companyName/:date" GET route for retrieving inventory per date from MySQL per company</li>
                                   <li>"/api/item" POST route is used to create new items in MySQL per company</li>
                                   <li>"/api/items/:companyName" GET route is used to retrieve items from MySQL per company</li>
                                   <li>"/api/inventory" POST route is used to create an inventory count and results calculation per company using MySQL</li>
@@ -554,7 +553,7 @@
                                 <h4>Routing</h4>
                                 <p style="text-align: justify">The following request are routed with Express and Node.js for MongoDB communication.
                                 <ul style="text-align: justify">
-                                  <li>/api/save GET route retrieves the saved documents from the articles collection in MongoDB using Mongoose. The saved documents are returned the Main compent where they are dynamically rendered into the Results component.</li>
+                                  <li>/api/save GET route retrieves the saved documents from the articles collection in MongoDB using Mongoose. The saved documents are returned the Main component where they are dynamically rendered into the Results component.</li>
                                   <li>/api/save POST route saves the selected article into the articles collection in MongoDB when the save button is clicked, which is then rendered into the Saved component.</li>
                                   <li>/api/save DELETE route deletes the selected article from the articles collection when the delete button is clicked.</li>
                                 </ul>
